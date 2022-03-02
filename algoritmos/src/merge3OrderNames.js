@@ -10,7 +10,7 @@ function merge3(array, inicio, miolo, final) {
   let atual2 = miolo;
 
   while (atual1 < miolo && atual2 < final) {
-    if (array[atual1].getName < array[atual2].getName) {
+    if (array[atual1].getName < array[atual2].getNota) {
       rank.push(array[atual1]);
       atual1++;
       atual++;

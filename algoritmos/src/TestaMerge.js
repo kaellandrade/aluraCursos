@@ -43,6 +43,18 @@ const names = [
   new Nota("Paulo", null)
 ]
 
+let notas = [
+  new Nota("paulo", 9),
+  new Nota("mariana", 5),
+  new Nota("juliana", 6.7),
+  new Nota("ana", 10),
+  new Nota("lucia", 9.3),
+  new Nota("jonas", 3),
+  new Nota("andre", 4),
+  new Nota("carlos", 8.5),
+  new Nota("guilherme", 7)
+]
+
 // ----Merge 1----
 const rank1 = merge1(notasDoMauricio, notasDoAlberto);
 
@@ -53,7 +65,18 @@ const rank2 = merge2(arrayUnicoNotas, 0, 4, arrayUnicoNotas.length);
 imprimeName(rank2);
 */
 // -----Merger 3 order by names-----
-const rank3 = merge3(names, 0, 5, names.length);
-TestaOrdenacaoAoIntercalar(names, 0, 5, names.length);
+// const rank3 = merge3(names, 0, 5, names.length);
 
-// imprimeName(rank3);
+TestaOrdenacaoAoIntercalar(notas, 0, 1, 2);
+// TestaOrdenacaoAoIntercalar(notas, 2, 3, 4);
+// TestaOrdenacaoAoIntercalar(notas, 0, 2, 4);
+
+// TestaOrdenacaoAoIntercalar(notas, 4, 5, 6);
+// TestaOrdenacaoAoIntercalar(notas, 6, 7, 8);
+// TestaOrdenacaoAoIntercalar(notas, 4, 6, 8);
+
+// TestaOrdenacaoAoIntercalar(notas, 0, 4, 8);
+
+// TestaOrdenacaoAoIntercalar(notas, 0, 8, notas.length);
+
+imprimeName(notas);

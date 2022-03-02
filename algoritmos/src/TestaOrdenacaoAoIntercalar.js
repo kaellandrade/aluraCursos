@@ -1,3 +1,4 @@
+// :TODO Ajustar esse código passagem por REFERÊNCIA;
 function TestaOrdenacaoAoIntercalar(array, inicio, miolo, final) {
   /**
    * array, inicio do arra default=0, miolo, final.
@@ -10,7 +11,7 @@ function TestaOrdenacaoAoIntercalar(array, inicio, miolo, final) {
   let atual2 = miolo;
 
   while (atual1 < miolo && atual2 < final) {
-    if (array[atual1].getName < array[atual2].getName) {
+    if (array[atual1].getNota < array[atual2].getNota) {
       rank.push(array[atual1]);
       atual1++;
       atual++;
@@ -30,10 +31,6 @@ function TestaOrdenacaoAoIntercalar(array, inicio, miolo, final) {
     rank.push(array[atual2++])
     atual++;
   }
-  // Imprime o resultado final
-  rank.forEach(element => {
-    console.log(`${element.getName} => ${element.getNota}`)
-  });
 }
 
 module.exports = TestaOrdenacaoAoIntercalar;
