@@ -67,16 +67,16 @@ imprimeName(rank2);
 // -----Merger 3 order by names-----
 // const rank3 = merge3(names, 0, 5, names.length);
 
-TestaOrdenacaoAoIntercalar(notas, 0, 1, 2);
-// TestaOrdenacaoAoIntercalar(notas, 2, 3, 4);
-// TestaOrdenacaoAoIntercalar(notas, 0, 2, 4);
+notas = TestaOrdenacaoAoIntercalar(notas, 0, 1, 2);
+notas = TestaOrdenacaoAoIntercalar(notas, 2, 3, 4);
+notas = TestaOrdenacaoAoIntercalar(notas, 0, 2, 4);
 
-// TestaOrdenacaoAoIntercalar(notas, 4, 5, 6);
-// TestaOrdenacaoAoIntercalar(notas, 6, 7, 8);
-// TestaOrdenacaoAoIntercalar(notas, 4, 6, 8);
+notas = TestaOrdenacaoAoIntercalar(notas, 4, 5, 6);
+notas = TestaOrdenacaoAoIntercalar(notas, 6, 7, 8);
+notas = TestaOrdenacaoAoIntercalar(notas, 4, 6, 8);
 
-// TestaOrdenacaoAoIntercalar(notas, 0, 4, 8);
+notas = TestaOrdenacaoAoIntercalar(notas, 0, 4, 8);
 
-// TestaOrdenacaoAoIntercalar(notas, 0, 8, notas.length);
+notas = TestaOrdenacaoAoIntercalar(notas, 0, 8, notas.length);
 
 imprimeName(notas);
